@@ -1,0 +1,16 @@
+$namepace:"el";
+
+@mixin b($block) {
+    $B: $namepace + '-' + $block !global;
+    .#{$B}{
+        @content;
+    }
+}
+
+@mixin when($starte) {
+    @at-root{
+        &.#{$state-prefix + $state}{
+            @content;
+        }
+    }
+}
