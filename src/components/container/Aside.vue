@@ -26,7 +26,7 @@ withDefaults(defineProps<PropValues>(),{
 
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(aside){
     overflow: auto;
     box-sizing: border-box;

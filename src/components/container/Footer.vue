@@ -24,7 +24,7 @@ withDefaults(defineProps<Props>(),{
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(input){
     padding: $--footer-padding;
     box-sizing: border-box;

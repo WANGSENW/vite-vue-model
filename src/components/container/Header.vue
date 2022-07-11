@@ -25,7 +25,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin';
+@import '../styles/mixin';
 @include b(header) {
   padding: $--header-padding;
   box-sizing: border-box;

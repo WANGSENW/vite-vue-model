@@ -3,4 +3,9 @@ import App from './App.vue'
 
 import container from './components/container'
 
-createApp(App).use(container).mount('#app')
+const app = createApp(App)
+app.config.globalProperties.$AILEMENTE = {
+    size:"large"
+}
+
+app.use(container).mount('#app')
