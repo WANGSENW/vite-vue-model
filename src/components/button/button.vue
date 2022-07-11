@@ -28,11 +28,10 @@ const props = withDefaults(defineProps<Props>(), {
     size: "",
     type:''
 })
-const buttonSize = computed(() => {
-    return props.size
-})
 const globalConfig = useGlobalConfig()
-console.log(globalConfig)
+const buttonSize = computed(() => {
+    return props.size || globalConfig.size
+})
 </script>
 
 <style lang="scss">

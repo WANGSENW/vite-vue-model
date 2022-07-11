@@ -1,12 +1,12 @@
 
 module.exports = {
     transform: {
-        // .vue文件用 vue-jest 处理
-        '^.+\\.vue$': 'vue-jest',
-        // .js或者.jsx用 babel-jest处理
-        '^.+\\.jsx?$': 'babel-jest',
-        //.ts文件用ts-jest处理
-        '^.+\\.ts$': 'ts-jest'
+        //  用 `vue-jest` 处理 `*.vue` 文件
+        '^.+\\.vue$': 'vue-jest', //vuejest 处理.vue
+        '^.+\\.jsx?$': 'babel-jest',  // babel jest处理js or jsx
+        '^.+\\.tsx?$': 'ts-jest', // ts-jest 处理.ts .tsx
     },
-    testMatch: ['**/?(*.)+(spec).[jt]s?(x)']
+    testMatch: ['**/?(*.)+(spec).[jt]s?(x)'],
+    collectCoverage: true,
+    coverageReporters: ["json", "html"],
 }
